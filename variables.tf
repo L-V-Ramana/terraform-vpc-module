@@ -30,7 +30,7 @@ variable "public_subnet_tags"{
     default = {}
 }
 
-variable "private_cidr_blocks" {
+variable "  " {
     type=list(string)
   
 }
@@ -40,7 +40,9 @@ variable "private_subnet_tags" {
     default = {}
   
 }
-
+variable "private_cidr_blocks"{
+    type = list(string)
+}
 variable "database_cidrs"{
     type = list(string)
 }
