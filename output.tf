@@ -3,5 +3,5 @@ output "aws-zones" {
 }
 
 output "public-subnet-id"{
-  value = aws_subnet.public.id 
+  value = aws_subnet.public[*].id 
 }
