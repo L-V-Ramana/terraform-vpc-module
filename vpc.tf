@@ -60,7 +60,7 @@ resource "aws_eip" "nat" {
   domain = "vpc"
 
   tags = merge(local.common_tags,var.elastic_ip_tags, {
-  Name = "${var.environment}-${var.project} "})
+  Name = "${var.environment}-${var.project}-module" })
 }
 
 resource "aws_nat_gateway" "main" {

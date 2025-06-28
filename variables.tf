@@ -30,10 +30,6 @@ variable "public_subnet_tags"{
     default = {}
 }
 
-variable "  " {
-    type=list(string)
-  
-}
 
 variable "private_subnet_tags" {
     type = map(string)
