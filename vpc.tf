@@ -11,7 +11,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_internet_gateway" "roboshop" {
-  vpc_id = aws_vpc.main.id
+  vpc_id = aws_vpc.main.id # association with VPC
 
   tags = merge(var.ig_tags,local.common_tags,
   {
